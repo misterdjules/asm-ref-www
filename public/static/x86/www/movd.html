@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html></html>
+<script type="text/javascript" src="/vendor/bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/bloodhound.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/typeahead.jquery.js"></script>
+<script type="text/javascript" src="/scripts/autocomplete.js"></script>
+<link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/typeahead.css">
+<input id="search" type="text" placeholder="Mnemonic" class="typeahead">
+<h1>MOVD -- Move Doubleword/Move Quadword</h1>
+<h2>Short description</h2>
+<p> Copies a doubleword from the source operand (second operand) to the destination operand (first operand).</p>
+<h2>Long description</h2>
+<p> Copies a doubleword from the source operand (second operand) to the destination operand (first operand). The source and destination operands can be general-purpose registers, MMX technology registers, XMM registers, or 32-bit memory locations. This instruction can be used to move a doubleword to and from the low doubleword of an MMX technology register and a general-purpose register or a 32-bit memory location, or to and from the low doubleword of an XMM register and a general-purpose register or a 32-bit memory location. The instruction cannot be used to transfer data between MMX technology registers, between XMM registers, between general-purpose registers, or between memory locations. When the destination operand is an MMX technology register, the source operand is written to the low doubleword of the register, and the register is zero-extended to 64 bits. When the destination operand is an XMM register, the source operand is written to the low doubleword of the register, and the register is zero-extended to 128 bits.</p>
+<h2>Affected flags</h2>
+<p></p>
+<script type="text/javascript">window.onload = function () { initTypeAhead(); }</script>

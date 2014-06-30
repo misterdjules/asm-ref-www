@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html></html>
+<script type="text/javascript" src="/vendor/bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/bloodhound.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/typeahead.jquery.js"></script>
+<script type="text/javascript" src="/scripts/autocomplete.js"></script>
+<link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/typeahead.css">
+<input id="search" type="text" placeholder="Mnemonic" class="typeahead">
+<h1>BSWAP -- Byte Swap</h1>
+<h2>Short description</h2>
+<p> Reverses the byte order of a 32-bit or 64-bit (destination) register.</p>
+<h2>Long description</h2>
+<p> Reverses the byte order of a 32-bit or 64-bit (destination) register. This instruction is provided for converting littleendian values to big-endian format and vice versa. To swap bytes in a word value (16-bit register), use the XCHG instruction. When the BSWAP instruction references a 16-bit register, the result is undefined. In 64-bit mode, the instruction’s default operation size is 32 bits. Using a REX prefix in the form of REX.R permits access to additional registers (R8-R15). Using a REX prefix in the form of REX.W promotes operation to 64 bits. See the summary chart at the beginning of this section for encoding data and limits.</p>
+<h2>Affected flags</h2>
+<p>None.</p>
+<script type="text/javascript">window.onload = function () { initTypeAhead(); }</script>

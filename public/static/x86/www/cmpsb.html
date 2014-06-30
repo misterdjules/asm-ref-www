@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html></html>
+<script type="text/javascript" src="/vendor/bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/bloodhound.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/typeahead.jquery.js"></script>
+<script type="text/javascript" src="/scripts/autocomplete.js"></script>
+<link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/typeahead.css">
+<input id="search" type="text" placeholder="Mnemonic" class="typeahead">
+<h1>CMPSB -- Compare String Operands</h1>
+<h2>Short description</h2>
+<p> Compares the byte, word, doubleword, or quadword specified with the first source operand with the byte, word, doubleword, or quadword specified with the second source operand and sets the status flags in the EFLAGS register according to the results.</p>
+<h2>Long description</h2>
+<p> Compares the byte, word, doubleword, or quadword specified with the first source operand with the byte, word, doubleword, or quadword specified with the second source operand and sets the status flags in the EFLAGS register according to the results. Both source operands are located in memory. The address of the first source operand is read from DS:SI, DS:ESI or RSI (depending on the address-size attribute of the instruction is 16, 32, or 64, respectively). The address of the second source operand is read from ES:DI, ES:EDI or RDI (again depending on the address-size attribute of the</p>
+<h2>Affected flags</h2>
+<p></p>
+<script type="text/javascript">window.onload = function () { initTypeAhead(); }</script>

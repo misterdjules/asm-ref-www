@@ -1,0 +1,25 @@
+{
+  "name": "asm-ref-www",
+  "version": "0.0.0",
+  "description": "Web application that gives easy access to reference documentation for assembly language (x86 and others).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "assembly",
+    "x86",
+    "documentation",
+    "reference"
+  ],
+  "author": "Julien Gilli",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^0.9.0",
+    "jade": "^1.3.1",
+    "node-asm-ref": "0.0.5"
+  },
+  "dependencies": {
+    "express": "^4.4.5"
+  }
+}

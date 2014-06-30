@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html></html>
+<script type="text/javascript" src="/vendor/bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/bloodhound.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/typeahead.jquery.js"></script>
+<script type="text/javascript" src="/scripts/autocomplete.js"></script>
+<link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/typeahead.css">
+<input id="search" type="text" placeholder="Mnemonic" class="typeahead">
+<h1>FISTTP -- Store Integer with Truncation</h1>
+<h2>Short description</h2>
+<p> FISTTP converts the value in ST into a signed integer using truncation (chop) as rounding mode, transfers the result to the destination, and pop ST.</p>
+<h2>Long description</h2>
+<p> FISTTP converts the value in ST into a signed integer using truncation (chop) as rounding mode, transfers the result to the destination, and pop ST. FISTTP accepts word, short integer, and long integer destinations. The following table shows the results obtained when storing various classes of numbers in integer format.</p>
+<h2>Affected flags</h2>
+<p>C1 is cleared; C0, C2, C3 undefined.</p>
+<script type="text/javascript">window.onload = function () { initTypeAhead(); }</script>

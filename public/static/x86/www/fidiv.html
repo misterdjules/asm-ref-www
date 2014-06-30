@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html></html>
+<script type="text/javascript" src="/vendor/bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/bloodhound.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/typeahead.jquery.js"></script>
+<script type="text/javascript" src="/scripts/autocomplete.js"></script>
+<link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/typeahead.css">
+<input id="search" type="text" placeholder="Mnemonic" class="typeahead">
+<h1>FIDIV -- Divide</h1>
+<h2>Short description</h2>
+<p> Divides the destination operand by the source operand and stores the result in the destination location.</p>
+<h2>Long description</h2>
+<p> Divides the destination operand by the source operand and stores the result in the destination location. The destination operand (dividend) is always in an FPU register; the source operand (divisor) can be a register or a memory location. Source operands in memory can be in single-precision or double-precision floating-point format, word or doubleword integer format. The no-operand version of the instruction divides the contents of the ST(1) register by the contents of the ST(0) register. The one-operand version divides the contents of the ST(0) register by the contents of a memory location (either a floating-point or an integer value). The two-operand version, divides the contents of the ST(0) register by the contents of the ST(i) register or vice versa. The FDIVP instructions perform the additional operation of popping the FPU register stack after storing the result. To pop the register stack, the processor marks the ST(0) register as empty and increments the stack pointer (TOP) by 1. The no-operand version of the floating-point divide instructions always results in the register stack being popped. In some assemblers, the mnemonic for this instruction is FDIV rather than FDIVP. The FIDIV instructions convert an integer source operand to double extended-precision floating-point format before performing the division. When the source operand is an integer 0, it is treated as a �0. If an unmasked divide-by-zero exception (#Z) is generated, no result is stored; if the exception is masked, an the appropriate sign is stored in the destination operand.</p>
+<h2>Affected flags</h2>
+<p></p>
+<script type="text/javascript">window.onload = function () { initTypeAhead(); }</script>

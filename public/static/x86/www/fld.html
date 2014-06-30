@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html></html>
+<script type="text/javascript" src="/vendor/bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/bloodhound.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/typeahead.jquery.js"></script>
+<script type="text/javascript" src="/scripts/autocomplete.js"></script>
+<link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/typeahead.css">
+<input id="search" type="text" placeholder="Mnemonic" class="typeahead">
+<h1>FLD -- Load Floating Point Value</h1>
+<h2>Short description</h2>
+<p> Pushes the source operand onto the FPU register stack.</p>
+<h2>Long description</h2>
+<p> Pushes the source operand onto the FPU register stack. The source operand can be in single-precision, doubleprecision, or double extended-precision floating-point format. If the source operand is in single-precision or double-precision floating-point format, it is automatically converted to the double extended-precision floatingpoint format before being pushed on the stack. The FLD instruction can also push the value in a selected FPU register [ST(i)] onto the stack. Here, pushing register ST(0) duplicates the stack top. This instructions operation is the same in non-64-bit modes and 64-bit mode.</p>
+<h2>Affected flags</h2>
+<p></p>
+<script type="text/javascript">window.onload = function () { initTypeAhead(); }</script>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html></html>
+<script type="text/javascript" src="/vendor/bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/bloodhound.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/typeahead.jquery.js"></script>
+<script type="text/javascript" src="/scripts/autocomplete.js"></script>
+<link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/typeahead.css">
+<input id="search" type="text" placeholder="Mnemonic" class="typeahead">
+<h1>CLD -- Clear Direction Flag</h1>
+<h2>Short description</h2>
+<p> Clears the DF flag in the EFLAGS register.</p>
+<h2>Long description</h2>
+<p> Clears the DF flag in the EFLAGS register. When the DF flag is set to 0, string operations increment the index registers (ESI and/or EDI). Operation is the same in all non-64-bit modes and 64-bit mode.</p>
+<h2>Affected flags</h2>
+<p>The DF flag is set to 0. The CF, OF, ZF, SF, AF, and PF flags are unaffected.</p>
+<script type="text/javascript">window.onload = function () { initTypeAhead(); }</script>

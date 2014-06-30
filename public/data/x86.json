@@ -1,0 +1,4 @@
+[
+
+    { "mnemonic": "CALL" }, { "mnemonic": "ADD" }, { "mnemonic": "RET" }, { "mnemonic": "REPNE"}
+]

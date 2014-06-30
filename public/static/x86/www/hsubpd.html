@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html></html>
+<script type="text/javascript" src="/vendor/bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/bloodhound.js"></script>
+<script type="text/javascript" src="/vendor/bower_components/typeahead.js/dist/typeahead.jquery.js"></script>
+<script type="text/javascript" src="/scripts/autocomplete.js"></script>
+<link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="/typeahead.css">
+<input id="search" type="text" placeholder="Mnemonic" class="typeahead">
+<h1>HSUBPD -- Packed Double-FP Horizontal Subtract</h1>
+<h2>Short description</h2>
+<p> The HSUBPD instruction subtracts horizontally the packed DP FP numbers of both operands.</p>
+<h2>Long description</h2>
+<p> The HSUBPD instruction subtracts horizontally the packed DP FP numbers of both operands. Subtracts the double-precision floating-point value in the high quadword of the destination operand from the low quadword of the destination operand and stores the result in the low quadword of the destination operand. Subtracts the double-precision floating-point value in the high quadword of the source operand from the low quadword of the source operand and stores the result in the high quadword of the destination operand. In 64-bit mode, use of the REX.R prefix permits this instruction to access additional registers (XMM8-XMM15). See Figure 3-19 for HSUBPD; see Figure 3-20 for VHSUBPD.</p>
+<h2>Affected flags</h2>
+<p></p>
+<script type="text/javascript">window.onload = function () { initTypeAhead(); }</script>
