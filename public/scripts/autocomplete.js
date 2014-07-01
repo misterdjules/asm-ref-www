@@ -1,3 +1,5 @@
+var x86Subdir = '/static/x86';
+
 function initTypeAhead() {
 
     var instructions = new Bloodhound({
@@ -6,17 +8,14 @@ function initTypeAhead() {
         },
         queryTokenizer: Bloodhound.tokenizers.whitespace,
         prefetch: {
-            url: '/static/x86/instructions.json',
+            url: x86Subdir + '/instructions.json',
         }
     });
 
-    instructions.clearPrefetchCache();
     instructions.initialize()
         .done(function() { console.log('Bloodhound init successful!');})
         .fail(function() { console.log('Bloodhound init failed!');});
 
-    // passing in `null` for the `options` arguments will result in the default
-    // options being used
     $('#search').typeahead({
             highlight: true
         },
@@ -25,6 +24,7 @@ function initTypeAhead() {
             displayKey: 'mnemonic',
             source: instructions.ttAdapter()
         }).on('typeahead:selected', function (event, datum) {
-            document.location.href = './' + datum.mnemonic.toLowerCase() + '.html';
+            document.location.href = x86Subdir + '/instructions/' +
+                                     datum.mnemonic.toLowerCase() + '.html';
         });
 }
