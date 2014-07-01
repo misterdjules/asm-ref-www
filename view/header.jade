@@ -1,13 +1,12 @@
 doctype html
 html
 
-script(type='text/javascript',src='/vendor/bower_components/jquery/jquery.js')
-script(type='text/javascript',src='/vendor/bower_components/typeahead.js/dist/bloodhound.js')
-script(type='text/javascript',src='/vendor/bower_components/typeahead.js/dist/typeahead.jquery.js')
-script(type='text/javascript',src='/scripts/autocomplete.js')
-
-link(rel='stylesheet',href='/vendor/bower_components/bootstrap/dist/css/bootstrap.css')
-link(rel='stylesheet',href='/css/typeahead.css')
+    head
+        script(type='text/javascript', src='/vendor/bower_components/requirejs/require.js', data-main='/scripts/main.js')
 
 
-input(id='search', class='typeahead', type='text', placeholder='Mnemonic')
+        link(rel='stylesheet',href='/vendor/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet',href='/css/typeahead.css')
+
+
+    input(id='search', class='typeahead', type='text', placeholder='Mnemonic')
