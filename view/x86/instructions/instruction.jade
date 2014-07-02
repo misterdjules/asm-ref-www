@@ -1,16 +1,21 @@
 extends instruction-layout
 
 block instruction
-    h1 #{instruction.mnemonic} -- #{instruction.synopsis}
+    div(class='instruction')
+        h1 #{instruction.mnemonic}
 
-    h2 Short description
+        h2 Synopsis
 
-    p #{instruction.shortDescription}
+        p #{instruction.synopsis}
 
-    h2 Long description
+        h2 Short description
 
-    p #{instruction.longDescription}
+        p #{instruction.shortDescription}
 
-    h2 Affected flags
+        h2 Long description
 
-    p #{instruction.affectedFlags}
+        p #{instruction.longDescription}
+
+        h2 Affected flags
+
+        p #{instruction.affectedFlags}
