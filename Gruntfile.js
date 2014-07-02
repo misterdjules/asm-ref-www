@@ -6,6 +6,9 @@ module.exports = function setupGrunt(grunt) {
             index: {
                 files: {
                     "public/static/index.html": "view/index.jade"
+                },
+                options: {
+                    pretty: true
                 }
             }
         }
