@@ -4,6 +4,7 @@ var jade      = require('jade');
 var async     = require('async');
 var fs        = require('fs');
 var util      = require('util');
+
 var x86AsmRef = asmRef();
 
 var INSTRUCTIONS_SUBDIR = 'instructions';
@@ -108,4 +109,7 @@ function generateX86Instructions(instructionTemplatePath, x86FolderPath, done) {
     });
 }
 
-module.exports = generateX86Instructions;
+module.exports = {
+    generateAllInstructionsPages: generateX86Instructions,
+    generateInstructionPage     : generateInstructionPage
+};
